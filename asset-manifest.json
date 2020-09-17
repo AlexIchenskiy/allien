@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/allien/static/css/main.737d72a6.chunk.css",
+    "main.js": "/allien/static/js/main.e5bedf4b.chunk.js",
+    "main.js.map": "/allien/static/js/main.e5bedf4b.chunk.js.map",
+    "runtime-main.js": "/allien/static/js/runtime-main.d7567e9d.js",
+    "runtime-main.js.map": "/allien/static/js/runtime-main.d7567e9d.js.map",
+    "static/js/2.71fb7e41.chunk.js": "/allien/static/js/2.71fb7e41.chunk.js",
+    "static/js/2.71fb7e41.chunk.js.map": "/allien/static/js/2.71fb7e41.chunk.js.map",
+    "index.html": "/allien/index.html",
+    "precache-manifest.a6bbfc7e0427f0f744b908a33c1fdebe.js": "/allien/precache-manifest.a6bbfc7e0427f0f744b908a33c1fdebe.js",
+    "service-worker.js": "/allien/service-worker.js",
+    "static/css/main.737d72a6.chunk.css.map": "/allien/static/css/main.737d72a6.chunk.css.map",
+    "static/js/2.71fb7e41.chunk.js.LICENSE.txt": "/allien/static/js/2.71fb7e41.chunk.js.LICENSE.txt",
+    "static/media/abg.png": "/allien/static/media/abg.575981ee.png",
+    "static/media/App.css": "/allien/static/media/allienbg.0ec2550c.png",
+    "static/media/collection.png": "/allien/static/media/collection.7714aa84.png",
+    "static/media/delivery.svg": "/allien/static/media/delivery.829d9bd9.svg",
+    "static/media/logo.svg": "/allien/static/media/logo.aef0dabc.svg",
+    "static/media/lookbook.png": "/allien/static/media/lookbook.e0d654d3.png",
+    "static/media/returning.svg": "/allien/static/media/returning.16c2c380.svg",
+    "static/media/sales.svg": "/allien/static/media/sales.27b7373b.svg",
+    "static/media/uniform.svg": "/allien/static/media/uniform.27ba320a.svg",
+    "static/media/whitelogo.svg": "/allien/static/media/whitelogo.87bccb01.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7567e9d.js",
+    "static/js/2.71fb7e41.chunk.js",
+    "static/css/main.737d72a6.chunk.css",
+    "static/js/main.e5bedf4b.chunk.js"
+  ]
+}
