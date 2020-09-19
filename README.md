@@ -1,3 +1,3 @@
 Allien WebShop page using React JS.
 
-[Click!](alexichenskiy.github.io/allien)
+[Click!](https://alexichenskiy.github.io/allien/)
