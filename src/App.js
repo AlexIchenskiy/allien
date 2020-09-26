@@ -9,7 +9,14 @@ import lookbookimg from './images/lookbook.png';
 import abg from './images/abg.png';
 import collectionimg from './images/collection.png';
 import whitelogo from './images/whitelogo.svg';
+import item1 from './images/item6.png';
+import item2 from './images/item5.png';
+import item3 from './images/item4.png';
+import item4 from './images/item3.png';
+import item5 from './images/item2.png';
+import item6 from './images/item1.png';
 
+import HeadCarousel from './headcarousel.js';
 import './App.css';
 
 function Header() {
@@ -58,6 +65,7 @@ function Header() {
             </div>
           </div>
           <div className = "right-head">
+            <HeadCarousel />
           </div>
         </div>
         <div className = "bottom-head">
@@ -81,6 +89,33 @@ function Sale() {
 }
 
 function Catalog() {
+  let items = [
+    [item1, 'Однотонные прямые брюки', '#E4CAB4', 1103],
+    [item2, 'Зауженные брюки LOVE REPUBLIC', '#D7C1A9', 999],
+    [item3, 'Брюки клёш', '#E3D1BD', 1790],
+    [item4, 'Зауженные брюки LOVE REPUBLIC', '#F0E9DA', 588],
+    [item5, 'Однтонный прямой пиджак', '#EDEFF1', 630],
+    [item6, 'Зауженные брюки LOVE REPUBLIC', '#F6E6D3', 899]
+  ];
+
+  let elements = [];
+
+  for (let i = 0; i < items.length; i++) {
+    elements.push(
+      <div className = "bottom-catalog-item">
+        <img src = {items[i][0]}/>
+        <div className = "bottom-catalog-item-desc">
+          <span>{items[i][1]}</span>
+          <div className = "bottom-catalog-color" style = {{backgroundColor: items[i][2]}}></div>
+          <div className = "bottom-catalog-price">
+            <span>{items[i][3]+' грн.'}</span>
+            <div className = "price-arrow"></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <section className = "catalog" id = "catalog">
       <div className = "top-catalog">
@@ -115,8 +150,6 @@ function Catalog() {
               </button>
               </div>
             </div>
-            <div className = "bottom-collection">
-            </div>
           </div>
           <div className = "right-collection">
             <div className = "right-collection-bg">
@@ -127,6 +160,9 @@ function Catalog() {
       </div>
       <div className = "bottom-catalog">
         <span className = "catalog-description">Каталог товаров</span>
+        <div className = "bottom-catalog-items">
+          {elements}
+        </div>
       </div>
     </section>
   )
