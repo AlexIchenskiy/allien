@@ -554,7 +554,7 @@ span.title-sale {
 }
 
 .sale-carousel span {
-  width: 235px;
+  width: 205px;
   height: 450px;
 }
 
@@ -597,6 +597,7 @@ span.title-sale {
 
 .sale-catalog-item-desc {
   height: 105px;
+  width: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -605,6 +606,7 @@ span.title-sale {
 
 .sale-catalog-item-desc span {
   height: 65%;
+  width: 100%;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
