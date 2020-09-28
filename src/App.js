@@ -17,6 +17,7 @@ import item5 from './images/item2.png';
 import item6 from './images/item1.png';
 
 import HeadCarousel from './headcarousel.js';
+import SaleCarousel from './salecarousel.js';
 import './App.css';
 
 function Header() {
@@ -27,11 +28,11 @@ function Header() {
             <div className = "left-head-top">
               <img className = "logo-head" src = {logo} />
               <ul className = "list-head list-categories">
-                <li>Женское</li>
-                <li>Мужское</li>
-                <li>Детям</li>
-                <li>Аксессуары</li>
-                <li>Обувь</li>
+                <li><span>Женское</span></li>
+                <li><span>Мужское</span></li>
+                <li><span>Детям</span></li>
+                <li><span>Аксессуары</span></li>
+                <li><span>Обувь</span></li>
               </ul>
             </div>
             <div className = "left-head-bottom">
@@ -84,6 +85,7 @@ function Sale() {
   return (
     <section className = "sale" id = "sale">
       <span class = "title-sale">Summer SALE</span>
+      <SaleCarousel />
     </section>
   )
 }

@@ -5,7 +5,7 @@
     "catalog"
     "footer";
   overflow-x: hidden;
-  min-width: 1400px;
+  min-width: 1500px;
   min-height: 600px;
 }
 
@@ -69,6 +69,9 @@ ul.list-categories {
 ul.list-categories li {
   height: 100%;
   transition: 0.5s transform;
+}
+
+ul.list-categories li > span {
 }
 
 ul.list-categories li:after {
@@ -343,6 +346,7 @@ div.right-head {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  transition: all 0.4s;
 }
 
 .carousel-item-desc {
@@ -466,14 +470,12 @@ div.right-head {
 
 .enter-text-left {
   transform: translateX(100%);
-  position: absolute;
   width: 180px;
 }
 
 .enter-text-right {
   transform: translateX(-100%);
   transition: transform .4s ease;
-  position: absolute;
   width: 180px;
 }
 
@@ -532,7 +534,7 @@ div.right-head {
 section.sale {
   grid-area: sale;
   background: rgba(230, 239, 248, 0.29);
-  height: 800px;
+  height: 555px;
   padding: 4% 15%;
 }
 
@@ -542,6 +544,167 @@ span.title-sale {
   font-weight: 900;
   font-size: 25px;
   line-height: 30px;
+}
+
+.sale-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 45px 0;
+}
+
+.sale-carousel span {
+  width: 235px;
+  height: 450px;
+}
+
+.sale-carousel-left {
+  transform: rotate(135deg);
+}
+
+.sale-carousel-right {
+  transform: rotate(-45deg);
+}
+
+.sale-carousel-left, .sale-carousel-right {
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid #000000;
+  border-left: 0;
+  border-top: 0;
+  transition: transform .4s;
+}
+
+.sale-carousel-left:hover, .sale-carousel-right:hover {
+  cursor: pointer;
+}
+
+.sale-carousel-left:hover {
+  transform: translateX(-5px) rotate(135deg);
+}
+
+.sale-carousel-left:active {
+  transform: translateX(-10px) rotate(135deg);
+}
+
+.sale-carousel-right:hover {
+  transform: translateX(5px) rotate(-45deg);
+}
+
+.sale-carousel-right:active {
+  transform: translateX(10px) rotate(-45deg);
+}
+
+.sale-catalog-item-desc {
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.sale-catalog-item-desc span {
+  height: 65%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.sale-catalog-price {
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sale-catalog-price span {
+  height: auto;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.sale-catalog-price div {
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.75px solid #7B7B7B;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(45deg);
+  transition: transform .5s;
+}
+
+.sale-catalog-item {
+  width: 235px;
+  height: 465px;
+  background: #ffffff;
+  box-shadow: 5px 5px 35px -15px rgba(0,0,0,0.75);
+  transition: transform .5s;
+}
+
+.sale-catalog-item img {
+  width: 100%;
+  height: 325px;
+  object-fit: cover;
+}
+
+.sale-current {
+  transition: transform .4s;
+  transform: scale(1.02, 1.02);
+}
+
+/*sale slide animation*/
+
+.enter-active-sale.enter-left-sale, .enter-active-sale.enter-right-sale, 
+.enter-active-sale.enter-text-right-sale, .enter-active-sale.enter-text-left-sale {
+  transform: translateX(0);
+  opacity: 1;
+  position: absolute;
+  transition: all .4s ease;
+}
+
+.enter-left-sale {
+  transform: translateX(310px);
+  opacity: 0.01;
+  width: 235px;
+  height: 465px;
+}
+
+.enter-right-sale {
+  transform: translateX(-310px);
+  opacity: 0.01;
+  width: 235px;
+  height: 465px;
+  transition: all .4s ease;
+}
+
+.leave-vert-sale {
+  transform: translateX(0);
+  opacity: 1;
+  position: absolute;
+}
+
+.leave-active-left-sale {
+  transform: translateX(-310px);
+  opacity: 0.01;
+  width: 235px;
+  height: 465px;
+  transition: all .4s ease;
+}
+
+.leave-vert-sale.leave-active-right-sale {
+  transform: translateX(310px);
+  opacity: 0.01;
+  width: 235px;
+  height: 465px;
+  transition: all .4s ease;
 }
 
 /*CATALOG*/

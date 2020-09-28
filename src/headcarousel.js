@@ -16,7 +16,7 @@ class HeadCarousel extends React.Component {
 			items: [pic1, pic2, pic3],
 			names: [['Однотонная льняная рубашка', '300грн.'], 
 					['Плиссированная юбка', '560грн.'], 
-					['Лёгкая белая блузкa', '490грн.']],
+					['Полупрозрачная белая блузкa', '490грн.']],
 			current: 0,
 			isNext: true,
 			complete: false,
