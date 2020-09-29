@@ -660,6 +660,13 @@ span.title-sale {
   padding: 10px 20px;
 }
 
+.sale-catalog-color {
+  width: 22px;
+  height: 42px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
 .sale-catalog-item-desc span {
   height: 65%;
   width: 100%;
@@ -677,13 +684,25 @@ span.title-sale {
   align-items: center;
 }
 
-.sale-catalog-price span {
-  height: auto;
+span.item-price {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
+  height: auto;
+  width: auto;
+}
+
+span.sale-price {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: line-through;
+  height: auto;
+  width: auto;
 }
 
 .sale-catalog-price div {

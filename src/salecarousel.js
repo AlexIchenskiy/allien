@@ -11,9 +11,9 @@ class SaleCarousel extends React.Component {
 		super(props);
 		this.state = ({
 			pics: [item1, item2, item3],
-			names: [['Песочные шорты бермуды', '386грн.', '450грн.'], 
-					['Укороченный однотонный топ', '499грн.', '550грн.'], 
-					['Однотонный прямой пиджак', '999грн.', '1200грн.']],
+			names: [['Песочные шорты бермуды', '386грн.', '450грн.', '#FEF4F4'], 
+					['Укороченный однотонный топ', '499грн.', '550грн.', '#2D2726'], 
+					['Однотонный прямой пиджак', '999грн.', '1200грн.', '#EDDCC4']],
 			current: 1,
 			isNext: true,
 			complete: false,
@@ -81,10 +81,12 @@ class SaleCarousel extends React.Component {
 			        	<img src = {this.state.pics[prev]}/>
 			        	<div className = "sale-catalog-item-desc">
 			        		<span>{this.state.names[prev][0]}</span>
-			            	<div className = "bottom-catalog-color" style = {{backgroundColor: '#ffffff'}}>
+			            	<div className = "sale-catalog-color" 
+			            		 style = {{backgroundColor: this.state.names[prev][3]}}>
 			            	</div>
 			            	<div className = "sale-catalog-price">
-			            		<span>{this.state.names[prev][1]+' грн.'}</span>
+			            		<span className = "item-price">{this.state.names[prev][1]}</span>
+			            		<span className = "sale-price">{this.state.names[prev][2]}</span>
 			            		<div className = "price-arrow"></div>
 			          		</div>
 			        	</div>
@@ -102,10 +104,12 @@ class SaleCarousel extends React.Component {
 			        	<img src = {this.state.pics[this.state.current]}/>
 			        	<div className = "sale-catalog-item-desc">
 			        		<span>{this.state.names[this.state.current][0]}</span>
-			            	<div className = "bottom-catalog-color" style = {{backgroundColor: '#ffffff'}}>
+			            	<div className = "sale-catalog-color" 
+			            		 style = {{backgroundColor: this.state.names[this.state.current][3]}}>
 			            	</div>
 			            	<div className = "sale-catalog-price">
-			            		<span>{this.state.names[this.state.current][1]+' грн.'}</span>
+			            		<span className = "item-price">{this.state.names[this.state.current][1]}</span>
+			            		<span className = "sale-price">{this.state.names[this.state.current][2]}</span>
 			            		<div className = "price-arrow"></div>
 			          		</div>
 			        	</div>
@@ -123,10 +127,12 @@ class SaleCarousel extends React.Component {
 			        	<img src = {this.state.pics[next]}/>
 			        	<div className = "sale-catalog-item-desc">
 			        		<span>{this.state.names[next][0]}</span>
-			            	<div className = "bottom-catalog-color" style = {{backgroundColor: '#ffffff'}}>
+			            	<div className = "sale-catalog-color" 
+			            		 style = {{backgroundColor: this.state.names[next][3]}}>
 			            	</div>
 			            	<div className = "sale-catalog-price">
-			            		<span>{this.state.names[next][1]+' грн.'}</span>
+			            		<span className = "item-price">{this.state.names[next][1]}</span>
+			            		<span className = "sale-price">{this.state.names[next][2]}</span>
 			            		<div className = "price-arrow"></div>
 			          		</div>
 			        	</div>
