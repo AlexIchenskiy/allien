@@ -77,7 +77,7 @@ class SaleCarousel extends React.Component {
 	            			leaveActive: this.state.isNext ? 'leave-active-left-sale' : 'leave-active-right-sale'
 						}}
 					>
-			    	<div className = "sale-catalog-item" key = {prev+'sale'}>
+			    	<div className = "sale-catalog-item" key = {prev+'sale'} onClick = {this.handlePrev}>
 			        	<img src = {this.state.pics[prev]}/>
 			        	<div className = "sale-catalog-item-desc">
 			        		<span>{this.state.names[prev][0]}</span>
@@ -119,7 +119,7 @@ class SaleCarousel extends React.Component {
 	            			leaveActive: this.state.isNext ? 'leave-active-left-sale' : 'leave-active-right-sale'
 						}}
 					>
-			    	<div className = "sale-catalog-item" key = {next+'sale'}>
+			    	<div className = "sale-catalog-item" key = {next+'sale'} onClick = {this.handleNext}>
 			        	<img src = {this.state.pics[next]}/>
 			        	<div className = "sale-catalog-item-desc">
 			        		<span>{this.state.names[next][0]}</span>

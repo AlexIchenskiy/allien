@@ -685,6 +685,7 @@ span.title-sale {
 }
 
 .sale-catalog-price div {
+  z-index: 999;
   width: 8px;
   height: 8px;
   display: flex;
@@ -695,6 +696,11 @@ span.title-sale {
   border-top: 0;
   transform: rotate(45deg);
   transition: transform .5s;
+}
+
+.sale-catalog-price div:hover {
+  cursor: pointer;
+  transform: rotate(45deg) translateY(5px) translateX(5px) scale(1.2, 1.2);
 }
 
 .sale-catalog-item {
