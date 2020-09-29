@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/allien/static/css/main.11c45558.chunk.css",
-    "main.js": "/allien/static/js/main.0d98700f.chunk.js",
-    "main.js.map": "/allien/static/js/main.0d98700f.chunk.js.map",
+    "main.css": "/allien/static/css/main.a2ebf379.chunk.css",
+    "main.js": "/allien/static/js/main.ba9ded77.chunk.js",
+    "main.js.map": "/allien/static/js/main.ba9ded77.chunk.js.map",
     "runtime-main.js": "/allien/static/js/runtime-main.d7567e9d.js",
     "runtime-main.js.map": "/allien/static/js/runtime-main.d7567e9d.js.map",
     "static/js/2.ea28bb33.chunk.js": "/allien/static/js/2.ea28bb33.chunk.js",
     "static/js/2.ea28bb33.chunk.js.map": "/allien/static/js/2.ea28bb33.chunk.js.map",
     "index.html": "/allien/index.html",
-    "precache-manifest.6803f2e5f38258bfb87b25f7ee866c86.js": "/allien/precache-manifest.6803f2e5f38258bfb87b25f7ee866c86.js",
+    "precache-manifest.9258273bd559d7c310d478a1542241d3.js": "/allien/precache-manifest.9258273bd559d7c310d478a1542241d3.js",
     "service-worker.js": "/allien/service-worker.js",
-    "static/css/main.11c45558.chunk.css.map": "/allien/static/css/main.11c45558.chunk.css.map",
+    "static/css/main.a2ebf379.chunk.css.map": "/allien/static/css/main.a2ebf379.chunk.css.map",
     "static/js/2.ea28bb33.chunk.js.LICENSE.txt": "/allien/static/js/2.ea28bb33.chunk.js.LICENSE.txt",
     "static/media/abg.png": "/allien/static/media/abg.575981ee.png",
     "static/media/App.css": "/allien/static/media/allienbg.0ec2550c.png",
@@ -41,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.d7567e9d.js",
     "static/js/2.ea28bb33.chunk.js",
-    "static/css/main.11c45558.chunk.css",
-    "static/js/main.0d98700f.chunk.js"
+    "static/css/main.a2ebf379.chunk.css",
+    "static/js/main.ba9ded77.chunk.js"
   ]
 }
