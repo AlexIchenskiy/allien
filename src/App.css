@@ -534,7 +534,7 @@ div.right-head {
 section.sale {
   grid-area: sale;
   background: rgba(230, 239, 248, 0.29);
-  height: 555px;
+  height: auto;
   padding: 4% 15%;
 }
 
@@ -546,7 +546,61 @@ span.title-sale {
   line-height: 30px;
 }
 
+.sale-carousel-outer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sale-carousel-radio {
+  width: 60px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale-radio-check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.sale-radio-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sale-carousel-check {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+  background-color: #FFFBF7;
+  border: 1px solid #BFBFBF;
+  transition: all .4s;
+}
+
+.sale-radio-check input:hover + .sale-carousel-check {
+  box-shadow: 0px 0px 0px 1px rgba(191,191,191,1);
+  background-color: rgba(191, 191, 191, 0.1);
+}
+
+.sale-radio-check input:active + .sale-carousel-check {
+  box-shadow: 0px 0px 0px 2px rgba(191,191,191,1);
+  background-color: rgba(191, 191, 191, 0.4);
+}
+
+.sale-radio-check input:checked + .sale-carousel-check {
+  transform: scale(1.2, 1.2);
+  background-color: #BFBFBF;
+}
+
 .sale-carousel {
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -859,8 +913,8 @@ img.lookbook-image {
 }
 
 .collection-image {
-  width: 125px;
-  height: auto;
+  width: 110px;
+  height: 175px;
   margin-top: 70px;
 }
 
