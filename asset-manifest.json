@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/allien/static/css/main.35db19bc.chunk.css",
+    "main.css": "/allien/static/css/main.11c45558.chunk.css",
     "main.js": "/allien/static/js/main.0d98700f.chunk.js",
     "main.js.map": "/allien/static/js/main.0d98700f.chunk.js.map",
     "runtime-main.js": "/allien/static/js/runtime-main.d7567e9d.js",
@@ -8,9 +8,9 @@
     "static/js/2.ea28bb33.chunk.js": "/allien/static/js/2.ea28bb33.chunk.js",
     "static/js/2.ea28bb33.chunk.js.map": "/allien/static/js/2.ea28bb33.chunk.js.map",
     "index.html": "/allien/index.html",
-    "precache-manifest.b9dc8b0a54fe6f2e549aa18893c1e343.js": "/allien/precache-manifest.b9dc8b0a54fe6f2e549aa18893c1e343.js",
+    "precache-manifest.6803f2e5f38258bfb87b25f7ee866c86.js": "/allien/precache-manifest.6803f2e5f38258bfb87b25f7ee866c86.js",
     "service-worker.js": "/allien/service-worker.js",
-    "static/css/main.35db19bc.chunk.css.map": "/allien/static/css/main.35db19bc.chunk.css.map",
+    "static/css/main.11c45558.chunk.css.map": "/allien/static/css/main.11c45558.chunk.css.map",
     "static/js/2.ea28bb33.chunk.js.LICENSE.txt": "/allien/static/js/2.ea28bb33.chunk.js.LICENSE.txt",
     "static/media/abg.png": "/allien/static/media/abg.575981ee.png",
     "static/media/App.css": "/allien/static/media/allienbg.0ec2550c.png",
@@ -41,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.d7567e9d.js",
     "static/js/2.ea28bb33.chunk.js",
-    "static/css/main.35db19bc.chunk.css",
+    "static/css/main.11c45558.chunk.css",
     "static/js/main.0d98700f.chunk.js"
   ]
 }
