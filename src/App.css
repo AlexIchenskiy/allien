@@ -470,12 +470,14 @@ div.right-head {
 
 .enter-text-left {
   transform: translateX(100%);
+  position: absolute;
   width: 180px;
 }
 
 .enter-text-right {
   transform: translateX(-100%);
   transition: transform .4s ease;
+  position: absolute;
   width: 180px;
 }
 
