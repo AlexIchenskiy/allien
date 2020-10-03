@@ -923,9 +923,10 @@ img.lookbook-image {
 
 .right-collection-bg {
   position: absolute;
-  width: 120%;
+  width: 100%;
+  height: auto;
   right: 20%;
-  margin-bottom: -1.75%;
+  bottom: -4px;
 }
 
 .right-collection-bg img {
@@ -960,6 +961,93 @@ img.lookbook-image {
 .collection-button {
   width: calc(135px + 25%);
 }
+
+.bottom-collection {
+  width: 100%;
+  height: 50%;
+}
+
+.collection-carousel-outer {
+  width: 65%;
+  margin-left: 182px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-carousel {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.collection-carousel-radio {
+  width: 100px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection-carousel-item {
+  width: 150px;
+  height: 150px;
+}
+
+.collection-carousel-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/*collection slide animation*/
+
+.enter-active-collection.enter-left-collection, .enter-active-collection.enter-right-collection, 
+.enter-active-collection.enter-text-right-collection, .enter-active-collection.enter-text-left-collection {
+  transform: translateX(0);
+  opacity: 1;
+  position: absolute;
+  transition: all .4s ease;
+}
+
+.enter-left-collection {
+  transform: translateX(175px);
+  opacity: 0.01;
+  width: 150px;
+  height: 150px;
+}
+
+.enter-right-collection {
+  transform: translateX(-175px);
+  opacity: 0.01;
+  width: 150px;
+  height: 150px;
+  transition: all .4s ease;
+}
+
+.leave-vert-collection {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.leave-active-left-collection {
+  transform: translateX(-175px);
+  opacity: 0.01;
+  width: 150px;
+  height: 150px;
+  transition: all .4s ease;
+}
+
+.leave-vert-collection.leave-active-right-collection {
+  transform: translateX(175px);
+  opacity: 0.01;
+  width: 150px;
+  height: 150px;
+  transition: all .4s ease;
+}
+
+/*bottom catalog*/
 
 .bottom-catalog {
   margin-top: 5%;

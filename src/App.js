@@ -18,6 +18,7 @@ import item6 from './images/item1.png';
 
 import HeadCarousel from './headcarousel.js';
 import SaleCarousel from './salecarousel.js';
+import CollectionCarousel from './collectioncarousel.js';
 import './App.css';
 
 function Header() {
@@ -151,6 +152,9 @@ function Catalog() {
                   </div>
               </button>
               </div>
+            </div>
+            <div className = "bottom-collection">
+              <CollectionCarousel />
             </div>
           </div>
           <div className = "right-collection">
