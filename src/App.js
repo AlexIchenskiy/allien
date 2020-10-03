@@ -94,11 +94,11 @@ function Sale() {
 function Catalog() {
   let items = [
     [item1, 'Однотонные прямые брюки', '#E4CAB4', 1103],
-    [item2, 'Зауженные брюки LOVE REPUBLIC', '#D7C1A9', 999],
+    [item2, 'Молочные зауженные брюки', '#D7C1A9', 999],
     [item3, 'Брюки клёш', '#E3D1BD', 1790],
-    [item4, 'Зауженные брюки LOVE REPUBLIC', '#F0E9DA', 588],
+    [item4, 'Песочные зауженные брюки', '#F0E9DA', 588],
     [item5, 'Однтонный прямой пиджак', '#EDEFF1', 630],
-    [item6, 'Зауженные брюки LOVE REPUBLIC', '#F6E6D3', 899]
+    [item6, 'Белые зауженные брюки', '#F6E6D3', 899]
   ];
 
   let elements = [];

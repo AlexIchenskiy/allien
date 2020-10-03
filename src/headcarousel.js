@@ -59,6 +59,13 @@ class HeadCarousel extends React.Component {
 	                <li><img src = {ic1} className = "carousel-icon" /></li>
 	                <li><img src = {ic2} className = "carousel-icon" /></li>
 	                <li><img src = {ic3} className = "carousel-icon" /></li>
+	                <li>
+	                	<div className = "carousel-menu">
+	                		<span className = "menu-line" />
+	                		<span className = "menu-line" />
+	                		<span className = "menu-line" />
+	                	</div>
+	                </li>
               	</ul>
 				<ReactCSSTransitionGroup
 					transitionName = {{

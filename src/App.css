@@ -1,3 +1,7 @@
+* {
+  transition: all .4s;
+}
+
 .App, body {
   grid-template-areas: 
     "head"
@@ -5,7 +9,7 @@
     "catalog"
     "footer";
   overflow-x: hidden;
-  min-width: 1500px;
+  min-width: 320px;
   min-height: 600px;
 }
 
@@ -43,7 +47,7 @@ div.left-head-bottom {
   justify-content: center;
   align-content: flex-start;
   width: 75%;
-  height: 650px;
+  height: 750px;
 }
 
 div.left-head-bottom > * {
@@ -56,7 +60,9 @@ img.logo-head {
 }
 
 ul.list-head {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -67,11 +73,9 @@ ul.list-categories {
 }
 
 ul.list-categories li {
-  height: 100%;
+  width: auto;
+  height: auto;
   transition: 0.5s transform;
-}
-
-ul.list-categories li > span {
 }
 
 ul.list-categories li:after {
@@ -110,7 +114,7 @@ span.title-head {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 900;
-  font-size: 35px;
+  font-size: 2.6vw;
   line-height: 43px;
   color: rgba(51, 58, 64, 0.92);
 }
@@ -119,14 +123,14 @@ span.subtitle-head {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.5vw;
+  line-height: 3vw;
   color: #000000;
 }
 
 button.button-head {
   width: 270px;
-  height: 60px;
+  min-height: 60px;
   border: none;
   outline: none;
   background: linear-gradient(to right, rgba(51, 58, 64, 0.92) 50%, #4485BB 50%);
@@ -222,8 +226,9 @@ div.arrow-head:active .arrow {
 ul.icons-head {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding-bottom: 75px;
   margin-top: 55px;
 }
@@ -231,7 +236,8 @@ ul.icons-head {
 ul.icons-head li {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 200px;
+  margin-bottom: 15px;
   align-items: center;
   text-align: center;
   font-family: Montserrat;
@@ -268,13 +274,13 @@ div.right-head {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 0.9vw;
   white-space: nowrap;
   line-height: 16px;
 }
 
 .carousel-button {
-  width: 150px;
+  width: 10vw;
   height: 35px;
   display: flex;
   justify-content: center;
@@ -305,6 +311,7 @@ div.right-head {
 
 .carousel-list li {
   display: inline-block;
+  width: auto;
 }
 
 .carousel-icon {
@@ -326,7 +333,7 @@ div.right-head {
   display: flex;
   width: 100%;
   height: 600px;
-  min-width: 480px;
+  min-width: 300px;
 }
 
 .head-carousel-slide {
@@ -335,12 +342,11 @@ div.right-head {
 
 .head-carousel-img {
   width: 100%;
-  height: 600px;
   object-fit: cover;
 }
 
 .carousel-item-name {
-  width: 180px;
+  width: 190px;
   border-left: 2px solid #939393;
   padding: 10px 15px;
   margin-bottom: 20px;
@@ -603,6 +609,7 @@ span.title-sale {
 
 .sale-carousel {
   height: auto;
+  min-width: 875px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -834,7 +841,7 @@ img.lookbook-image {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: calc(135px + 20%);
   height: 45px;
   background: linear-gradient(to right, rgba(216, 227, 231, 0.36) 50%, #ffffff 50%);
   background-size: 200% 100%;
@@ -969,7 +976,7 @@ img.lookbook-image {
 
 .collection-carousel-outer {
   width: 65%;
-  margin-left: 182px;
+  margin-left: 23%;
   margin-top: 35px;
   display: flex;
   flex-direction: column;
@@ -1063,7 +1070,7 @@ img.lookbook-image {
 }
 
 .bottom-catalog-item {
-  width: 27.5%;
+  width: 235px;
   height: 465px;
   margin: 45px 0;
   background: #ffffff;
@@ -1174,10 +1181,12 @@ ul.list-footer li:hover:after {
 }
 
 .footer-number {
+  margin: 0 15px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 1.1vw;
+  white-space: nowrap;
   line-height: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -1212,7 +1221,8 @@ ul.list-footer li:hover:after {
 
 .footer-arrow-button {
   position: relative;
-  width: 15px;
+  padding: 10px;
+  width: 35px;
   height: 35px;
   transition: .5s transform;
 }
@@ -1238,10 +1248,124 @@ ul.list-footer li:hover:after {
 
 .footer-line {
   position: absolute;
-  left: 4.35px;
+  left: 14.55px;
   height: 35px;
   width: 1px;
   background-color: #ffffff;
 }
 
 /*MEDIA*/
+
+@media only screen and (max-width: 1350px) {
+  .head-carousel {
+    height: 500px;
+  }
+
+  .bottom-catalog-items > * {
+    margin-right: 25px;
+  }
+
+  .left-head-bottom {
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  ul.list-categories li {
+    font-size: 1.3vw;
+  }
+
+  .head-carousel {
+    height: 450px;
+  }
+
+  .sale-carousel {
+    width: 100%;
+    align-self: center;
+  }
+
+  .sale-carousel-right, .sale-carousel-left {
+    display: none;
+  }
+
+  div.left-head-bottom {
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header, section.catalog {
+    padding: 0 85px;
+  }
+
+  div.left-head-bottom {
+    height: 500px;
+  }
+
+  div.left-head-bottom > * {
+    margin-bottom: 15px;
+  }
+
+  .head-carousel {
+    height: 420px;
+  }
+
+  .carousel-list {
+    width: calc(100% - 30px);
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  header, section.catalog {
+    padding: 0 65px;
+  }
+
+  .left-head-top > ul {
+    display: none;
+  }
+
+  .left-head-bottom {
+    height: 350px;
+  }
+
+  .carousel-icon {
+    display: none;
+  }
+
+  .carousel-menu {
+    width: 18px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .carousel-number {
+    font-size: 1.2vw;
+  }
+
+  .carousel-button {
+    margin-left: 10px;
+    width: 90%;
+  }
+
+  .carousel-menu > span {
+    width: 18px;
+    height: 1px;
+    background-color: #000000;
+  }
+
+  .bottom-catalog-items > * {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 576px) {
+
+}
