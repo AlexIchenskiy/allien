@@ -76,7 +76,7 @@ class collectionCarousel extends React.Component {
 	            			leaveActive: this.state.isNext ? 'leave-active-left-collection' : 'leave-active-right-collection'
 						}}
 					>
-			    	<div className = "collection-carousel-item" key = {prev+'collectionsale'} onClick = {this.handlePrev}>
+			    	<div className = "collection-carousel-item collection-carousel-mobile" key = {prev+'collectionsale'} onClick = {this.handlePrev}>
 			        	<img src = {this.state.pics[prev]}/>
 			        </div>
 			        </ReactCSSTransitionGroup>
@@ -103,7 +103,7 @@ class collectionCarousel extends React.Component {
 	            			leaveActive: this.state.isNext ? 'leave-active-left-collection' : 'leave-active-right-collection'
 						}}
 					>
-			    	<div className = "collection-carousel-item" key = {next+'collectionsale'} onClick = {this.handleNext}>
+			    	<div className = "collection-carousel-item collection-carousel-mobile" key = {next+'collectionsale'} onClick = {this.handleNext}>
 			        	<img src = {this.state.pics[next]}/>
 			        </div>
 			        </ReactCSSTransitionGroup>

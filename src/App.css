@@ -9,7 +9,7 @@
     "catalog"
     "footer";
   overflow-x: hidden;
-  min-width: 320px;
+  min-width: 320px!important;
   min-height: 600px;
 }
 
@@ -57,6 +57,10 @@ div.left-head-bottom > * {
 img.logo-head {
   display: inline-block;
   margin-right: 35px;
+}
+
+li.logo-head-mobile > img.logo-head {
+  display: none;
 }
 
 ul.list-head {
@@ -110,12 +114,16 @@ ul.list-head li {
   overflow: hidden;
 }
 
+ul.carousel-list-mobile {
+  display: none;
+}
+
 span.title-head {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 900;
   font-size: 2.6vw;
-  line-height: 43px;
+  line-height: 4vw;
   color: rgba(51, 58, 64, 0.92);
 }
 
@@ -129,7 +137,7 @@ span.subtitle-head {
 }
 
 button.button-head {
-  width: 270px;
+  width: 300px;
   min-height: 60px;
   border: none;
   outline: none;
@@ -140,7 +148,7 @@ button.button-head {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
   transition: background-position .5s, transform .25s;
@@ -158,6 +166,10 @@ button.button-head:active {
 
 .arrow-out {
   position: relative;
+}
+
+.mobile {
+  display: none;
 }
 
 .line {
@@ -279,6 +291,10 @@ div.right-head {
   line-height: 16px;
 }
 
+.carousel-buttons {
+  min-width: 135px!important;
+}
+
 .carousel-button {
   width: 10vw;
   height: 35px;
@@ -319,12 +335,12 @@ div.right-head {
 }
 
 .carousel-icon:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.1, 1.1);
   cursor: pointer;
 }
 
 .carousel-icon:active {
-  transform: scale(0.98, 0.98);
+  transform: scale(0.95, 0.95);
 }
 
 .head-carousel {
@@ -332,7 +348,7 @@ div.right-head {
   overflow: hidden;
   display: flex;
   width: 100%;
-  height: 600px;
+  height: 700px;
   min-width: 300px;
 }
 
@@ -342,6 +358,7 @@ div.right-head {
 
 .head-carousel-img {
   width: 100%;
+  height: 700px;
   object-fit: cover;
 }
 
@@ -617,7 +634,7 @@ span.title-sale {
 }
 
 .sale-carousel span {
-  width: 205px;
+  width: 235px;
   height: 450px;
 }
 
@@ -805,6 +822,13 @@ section.catalog {
   background-color: #ffffff;
 }
 
+.top-catalog {
+  background-image: url('./images/abg.png');
+  background-size: 125px 175px;
+  background-repeat: no-repeat;
+  background-position: center left 25px;
+}
+
 /*lookbook*/
 
 img.lookbook-image {
@@ -945,12 +969,7 @@ img.lookbook-image {
   width: 66.7%;
   display: flex;
   justify-content: space-between;
-}
-
-.collection-image {
-  width: 110px;
-  height: 175px;
-  margin-top: 70px;
+  margin-left: 25%;
 }
 
 .collection-line {
@@ -961,12 +980,16 @@ img.lookbook-image {
   height: 225px;
 }
 
+.line-mobile {
+  display: none;
+}
+
 .collection-description {
   margin-top: 70px;
 }
 
 .collection-button {
-  width: calc(135px + 25%);
+  width: calc(135px + 25%)!important;
 }
 
 .bottom-collection {
@@ -980,12 +1003,15 @@ img.lookbook-image {
   margin-top: 35px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .collection-carousel {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 150px;
+  z-index: 5;
 }
 
 .collection-carousel-radio {
@@ -1000,6 +1026,7 @@ img.lookbook-image {
 .collection-carousel-item {
   width: 150px;
   height: 150px;
+  margin: 0 15px;
 }
 
 .collection-carousel-item img {
@@ -1158,8 +1185,14 @@ footer {
   background: #34353D;
 }
 
+footer img {
+  margin-right: 15px;
+  grid-area: footer-img;
+}
+
 .list-footer {
   color: #ffffff;
+  grid-area: footer-list;
 }
 
 ul.list-footer li:after {
@@ -1190,6 +1223,7 @@ ul.list-footer li:hover:after {
   line-height: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
+  grid-area: footer-number;
 }
 
 .footer-button {
@@ -1208,6 +1242,7 @@ ul.list-footer li:hover:after {
   text-transform: uppercase;
   color: #FFFFFF;
   transition: transform .5s, background-position .5s;
+  grid-area: footer-btn;
 }
 
 .footer-button:hover {
@@ -1225,6 +1260,7 @@ ul.list-footer li:hover:after {
   width: 35px;
   height: 35px;
   transition: .5s transform;
+  grid-area: footer-arrow;
 }
 
 .footer-arrow-button:hover {
@@ -1240,6 +1276,7 @@ ul.list-footer li:hover:after {
   position: absolute;
   width: 8px;
   height: 8px;
+  left: 17.5px;
   border: 1.75px solid #ffffff;
   border-left: 0;
   border-top: 0;
@@ -1248,7 +1285,7 @@ ul.list-footer li:hover:after {
 
 .footer-line {
   position: absolute;
-  left: 14.55px;
+  left: 22px;
   height: 35px;
   width: 1px;
   background-color: #ffffff;
@@ -1258,15 +1295,27 @@ ul.list-footer li:hover:after {
 
 @media only screen and (max-width: 1350px) {
   .head-carousel {
-    height: 500px;
+    height: 650px;
   }
 
   .bottom-catalog-items > * {
-    margin-right: 25px;
+    margin: 45px 25px;
   }
 
   .left-head-bottom {
     height: 650px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 150px 450px auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 15px;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+      "footer-img footer-list ."
+      "footer-btn footer-number footer-arrow";
+    justify-items: start;
   }
 }
 
@@ -1277,6 +1326,14 @@ ul.list-footer li:hover:after {
 
   .head-carousel {
     height: 450px;
+  }
+
+  .right-collection {
+    height: 550px;
+  }
+
+  .right-collection-bg {
+    width: 120%;
   }
 
   .sale-carousel {
@@ -1293,13 +1350,19 @@ ul.list-footer li:hover:after {
   }
 }
 
+@media only screen and (max-width: 1018px) {
+  .bottom-catalog-item {
+    margin: 45px 20px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
-  header, section.catalog {
+  header {
     padding: 0 85px;
   }
 
   div.left-head-bottom {
-    height: 500px;
+    height: 450px;
   }
 
   div.left-head-bottom > * {
@@ -1307,7 +1370,7 @@ ul.list-footer li:hover:after {
   }
 
   .head-carousel {
-    height: 420px;
+    height: 520px;
   }
 
   .carousel-list {
@@ -1315,10 +1378,23 @@ ul.list-footer li:hover:after {
     margin-right: 15px;
     margin-left: 15px;
   }
+
+  section.catalog {
+    padding: 5% 85px;
+  }
+
+  footer {
+    padding: 5% 85px;
+    width: calc(100% - 170px);
+  }
+
+  .footer-number, ul.list-footer li {
+    font-size: 1.4vw;
+  }
 }
 
 @media only screen and (max-width: 930px) {
-  header, section.catalog {
+  header {
     padding: 0 65px;
   }
 
@@ -1328,6 +1404,12 @@ ul.list-footer li:hover:after {
 
   .left-head-bottom {
     height: 350px;
+  }
+
+  button.button-head {
+    font-size: 2.6vw;
+    line-height: 3.2vw;
+    width: 70%;
   }
 
   .carousel-icon {
@@ -1357,15 +1439,506 @@ ul.list-footer li:hover:after {
     background-color: #000000;
   }
 
+  section.catalog {
+    padding: 5% 0;
+  }
+
+  img.lookbook-image {
+    box-shadow: 77px 67px 0px -35px rgba(216, 227, 231, 0.36);
+  }
+
   .bottom-catalog-items > * {
-    margin-right: 5px;
+    margin: 45px 5px;
+  }
+
+  footer {
+    padding: 5% 65px;
+    width: calc(100% - 130px);
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 743px) {
+  .head-carousel {
+    min-width: 210px;
+    height: 350px;
+  }
 
+  .head-carousel-img {
+    min-width: 210px;
+    height: 350px;
+  }
+
+  button.carousel-button {
+    font-size: 1.4vw;
+  }
+
+  .carousel-menu {
+    margin-left: 10px;
+  }
+
+  .top-catalog {
+    background-position: top right 25px;
+  }
+
+  img.lookbook-image {
+    width: 45%;
+    box-shadow: 67px 57px 0px -15px rgba(216, 227, 231, 0.36);
+  }
+
+  .collection-carousel-outer {
+    height: 150px;
+  }
+
+  .collection-carousel {
+    height: 150px;
+  }
+
+  .collection-carousel span {
+    width: 125px;
+    height: 125px;
+    margin: 0 10px;
+  }
+
+  .collection-carousel-item {
+    width: 125px;
+    height: 125px;
+  }
+
+  .collection-carousel-item img {
+    width: 125px;
+    height: 125px;
+  }
+
+  .right-collection {
+    width: 250px;
+  }
+
+  .right-collection-bg {
+    width: 110%;
+  }
+
+  .bottom-catalog-items {
+    justify-content: center;
+  }
+
+  footer {
+    grid-template-columns: 150px 300px auto;
+    grid-template-areas: 
+      "footer-img footer-list footer-list"
+      "footer-btn footer-number footer-arrow";
+  }
+
+  .footer-number, ul.list-footer li {
+    font-size: 1.8vw;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  span.title-head {
+    font-size: 3.3vw;
+  }
+
+  span.subtitle-head {
+    font-size: 1.7vw;
+  }
+
+  .lookbook {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+
+  .lookbook-description {
+    margin-left: 10%;
+  }
+
+  img.lookbook-image {
+    width: 40%;
+  }
+
+  .top-collection {
+    margin-left: 55px;
+  }
+
+  .collection-line {
+    margin-top: -25px;
+  }
+
+  .collection-description {
+    margin-top: 25px;
+  }
+
+  .right-collection {
+    width: 200px;
+    height: 525px;
+  }
+
+  .right-collection-bg {
+    width: 120%;
+  }
+
+  .catalog-description {
+    margin-left: 55px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
+  header {
+    padding: 0;
+  }
 
+  .left-head {
+    display: none;
+  }
+
+  .right-head {
+    width: 100vw;
+    height: 675px;
+  }
+
+  .head-carousel {
+    width: 100vw;
+    height: 675px;
+  }
+
+  button.carousel-button {
+    width: calc(100%-20px);
+    margin-right: 15px;
+    font-size: 10px;
+  }
+
+  li.logo-head-mobile > img.logo-head {
+    display: block;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  .head-carousel-img {
+    width: 100vw;
+    height: 675px;
+  }
+
+  .carousel-icon {
+    display: block;
+  }
+
+  .carousel-number {
+    font-size: 10px;
+  }
+
+  div.carousel-nav {
+    width: calc(100%  - 30px);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 25px 15px;
+  }
+
+  div.carousel-item-name {
+    transform: scale(0.8, 0.8);
+    margin-bottom: 0;
+  }
+
+  div.mobile {
+    display: block;
+    margin-left: 0;
+    margin-right: 25px;
+  }
+
+  section.sale {
+    padding: 35px 15px;
+  }
+
+  section.catalog {
+    padding: 45px 0;
+  }
+
+  .top-catalog {
+    background-image: none;
+  }
+
+  .lookbook {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 65px;
+  }
+
+  img.lookbook-image {
+    width: 100%;
+    box-shadow: -67px 57px 0px -15px rgba(216, 227, 231, 0.36);
+  }
+
+  .lookbook-description {
+    align-self: flex-start;
+    width: 80%;
+    margin-top: 55px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .collection {
+    position: relative;
+    display: flex;
+  }
+
+  .top-collection {
+    width: 350px;
+  }
+
+  .collection-description {
+    width: 100%;
+    margin-top: 25%;
+    margin-bottom: 65px;
+  }
+
+  .collection-line {
+    display: none;
+  }
+
+  .line-mobile {
+    display: block;
+    height: 160px;
+    margin-top: -55px;
+  }
+
+  .left-collection {
+    margin-top: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 6;
+  }
+
+  .right-collection {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 500px;
+  }
+
+  .right-collection-bg {
+    position: relative;
+    height: 500px;
+    width: auto;
+    bottom: 0;
+  }
+
+  .right-collection-bg img {
+    height: 100%;
+    width: auto;
+  }
+
+  footer {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+      "footer-img"
+      "footer-list"
+      "footer-btn"
+      "footer-number"
+      "footer-arrow";
+    justify-items: center;
+    justify-content: center;
+  }
+
+  ul.list-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul.list-footer li {
+    margin-bottom: 15px;
+  }
+
+  .footer-number, ul.list-footer li {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel-icon {
+    display: none;
+  }
+
+  .lookbook {
+    padding: 25px 45px;
+  }
+
+  .collection-carousel-mobile {
+    display: none;
+  }
+
+  .left-collection {
+    margin-top: 250px;
+  }
+
+  .right-collection {
+    width: 65%;
+  }
+
+  .collection-carousel-outer {
+    margin-left: 15px;
+  }
+
+  .top-collection {
+    width: 300px;
+  }
+
+  .bottom-collection {
+    width: 200px;
+  }
+
+  .collection-description {
+    margin-top: 50%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    padding: 0;
+    background-image: none;
+  }
+
+  ul.carousel-list-mobile {
+    display: block;
+  }
+
+  div.left-head-bottom {
+    height: 320px;
+    margin-top: 75px;
+  }
+
+  span.title-head {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  span.subtitle-head {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  button.button-head {
+    width: 75%;
+    min-height: 45px;
+    font-size: 14px;
+  }
+
+  div.arrow-head {
+    display: none;
+  }
+
+  .top-head {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.left-head {
+    width: calc(100% - 70px);
+    display: block;
+    margin: 20px 35px;
+  }
+
+  div.left-head-bottom {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .right-head {
+    margin: 0;
+    width: 100vw;
+    height: 675px;
+  }
+
+  div.carousel-nav {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 65px 15px;
+  }
+
+  div.carousel-item-desc {
+    height: 75px;
+  }
+
+  div.carousel-item-name {
+    margin-left: -25px;
+  }
+
+  div.carousel-nav > * {
+    margin-bottom: 25px;
+  }
+
+  ul.carousel-list {
+    display: none;
+  }
+
+  img.logo-head {
+    transform: scale(0.8, 0.8);
+  }
+
+  div.left-head-top {
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul.carousel-list-mobile {
+    margin: 0;
+    margin-left: 115px;
+    display: flex;
+    width: 50%;
+  }
+
+  ul.carousel-list-number {
+    margin: 25px 0;
+    width: calc(100% - 50px);
+  }
+
+  ul.carousel-list-number > li {
+    font-size: 12px;
+  }
+
+  .carousel-icon {
+    display: block!important;
+  }
+
+  div.head-carousel {
+    height: 575px;
+  }
+
+  div.mobile {
+    display: block;
+  }
+
+  li.logo-head-mobile > img.logo-head {
+    display: none;
+  }
+
+  .lookbook {
+    padding: 25px 25px;
+  }
+
+  .top-collection {
+    width: 275px;
+    margin-left: 45px;
+  }
+
+  .collection-description {
+    margin-top: 125px;
+  }
+
+  .catalog-description {
+    margin-left: 45px;
+  }
+
+  footer {
+    margin: 0;
+    padding: 45px 35px;
+    width: calc(100% - 70px);
+  }
 }

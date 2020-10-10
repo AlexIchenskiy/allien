@@ -6,7 +6,6 @@ import sales from './images/sales.svg';
 import uniform from './images/uniform.svg';
 import returning from './images/returning.svg';
 import lookbookimg from './images/lookbook.png';
-import abg from './images/abg.png';
 import collectionimg from './images/collection.png';
 import whitelogo from './images/whitelogo.svg';
 import item1 from './images/item6.png';
@@ -15,6 +14,9 @@ import item3 from './images/item4.png';
 import item4 from './images/item3.png';
 import item5 from './images/item2.png';
 import item6 from './images/item1.png';
+import ic1 from './images/ic1.svg';
+import ic2 from './images/ic2.svg';
+import ic3 from './images/ic3.svg';
 
 import HeadCarousel from './headcarousel.js';
 import SaleCarousel from './salecarousel.js';
@@ -28,6 +30,18 @@ function Header() {
           <div className = "left-head">
             <div className = "left-head-top">
               <img className = "logo-head" src = {logo} />
+              <ul className = "carousel-list carousel-list-mobile">
+                  <li><img src = {ic1} className = "carousel-icon" /></li>
+                  <li><img src = {ic2} className = "carousel-icon" /></li>
+                  <li><img src = {ic3} className = "carousel-icon" /></li>
+                  <li>
+                    <div className = "carousel-menu">
+                      <span className = "menu-line" />
+                      <span className = "menu-line" />
+                      <span className = "menu-line" />
+                    </div>
+                  </li>
+                </ul>
               <ul className = "list-head list-categories">
                 <li><span>Женское</span></li>
                 <li><span>Мужское</span></li>
@@ -36,6 +50,10 @@ function Header() {
                 <li><span>Обувь</span></li>
               </ul>
             </div>
+            <ul className = "carousel-list carousel-list-mobile carousel-list-number">
+              <li className = "carousel-number">+ 38 (044) 395-48-69</li>
+              <li><button className = "carousel-button">Заказать звонок</button></li>
+            </ul>
             <div className = "left-head-bottom">
               <span className = "title-head">Яркие коллекции на любой день и случай</span>
               <span className = "subtitle-head">
@@ -125,21 +143,23 @@ function Catalog() {
         <div className = "lookbook">
           <img src = {lookbookimg} className = "lookbook-image" />
           <div className = "lookbook-description">
-            <span className = "title-description">Летний lookbook</span>
-            <span className = "subtitle-description">Летние коллекции от известных брендов</span>
-            <button className = "lookbook-button">
-              <span className = "lookbook-button-description">Смотреть</span>
-              <div className = "button-arrow">
-                <div className = "button-arrow-line"></div>
-                <div className = "button-arrow-triangle"></div>
-              </div>
-            </button>
+            <div className = "collection-line line-mobile"></div>
+            <div className = "lookbook-description-text">
+              <span className = "title-description">Летний lookbook</span>
+              <span className = "subtitle-description">Летние коллекции от известных брендов</span>
+              <button className = "lookbook-button">
+                <span className = "lookbook-button-description">Смотреть</span>
+                <div className = "button-arrow">
+                  <div className = "button-arrow-line"></div>
+                  <div className = "button-arrow-triangle"></div>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
         <div className = "collection">
           <div className = "left-collection">
             <div className = "top-collection">
-              <img className = "collection-image" src = {abg}/>
               <div className = "collection-line"></div>
               <div className = "collection-description">
                 <span className = "title-description">Новая коллекция на каждый день</span>

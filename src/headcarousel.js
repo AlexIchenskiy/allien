@@ -8,6 +8,7 @@ import pic3 from './images/carousel3.png';
 import ic1 from './images/ic1.svg';
 import ic2 from './images/ic2.svg';
 import ic3 from './images/ic3.svg';
+import logo from './images/logo.svg';
 
 class HeadCarousel extends React.Component {
 	constructor(props) {
@@ -54,6 +55,7 @@ class HeadCarousel extends React.Component {
 		return (
 			<div className = "head-carousel">
 				<ul className = "carousel-list">
+					<li className = "logo-head-mobile"><img className = "logo-head" src = {logo} /></li>
 	                <li className = "carousel-number">+ 38 (044) 395-48-69</li>
 	                <li><button className = "carousel-button">Заказать звонок</button></li>
 	                <li><img src = {ic1} className = "carousel-icon" /></li>
@@ -133,6 +135,19 @@ class HeadCarousel extends React.Component {
 							<div className = "head-carousel-next-arrow"></div>
 						</div>
 					</div>
+					<div className = "arrow-out arrow-head mobile" 
+                    	 onClick = 
+	                     {(e) => {e.preventDefault();
+	                      document.getElementById('sale').scrollIntoView({ behavior: 'smooth', block: 'start' });
+	                     }}
+	                >
+	                  <div className = "line line-up">
+	                  </div>
+	                  <div className = "line line-down">
+	                  </div>
+	                  <div className = "arrow">
+	                  </div>
+	                </div>
 				</div>
 			</div>
 		)
