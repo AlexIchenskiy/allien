@@ -1398,6 +1398,10 @@ ul.list-footer li:hover:after {
     padding: 0 65px;
   }
 
+  span.subtitle-head {
+    font-size: 1.8vw;
+  }
+
   .left-head-top > ul {
     display: none;
   }
@@ -1454,6 +1458,21 @@ ul.list-footer li:hover:after {
   footer {
     padding: 5% 65px;
     width: calc(100% - 130px);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .left-head-bottom {
+    margin-top: 25px;
+  }
+  span.title-head {
+    font-size: 3.3vw;
+  }
+
+  span.subtitle-head {
+    font-size: 2.3vw;
+    line-height: 3vw;
+    margin-bottom: 45px;
   }
 }
 
@@ -1535,11 +1554,13 @@ ul.list-footer li:hover:after {
 
 @media only screen and (max-width: 630px) {
   span.title-head {
-    font-size: 3.3vw;
+    font-size: 3.6vw;
   }
 
   span.subtitle-head {
-    font-size: 1.7vw;
+    font-size: 2.5vw;
+    line-height: 2.9vw;
+    margin-bottom: 25px;
   }
 
   .lookbook {
@@ -1646,7 +1667,11 @@ ul.list-footer li:hover:after {
   }
 
   section.sale {
-    padding: 35px 15px;
+    padding: 35px 0;
+  }
+
+  .title-sale {
+    margin-left: 45px;
   }
 
   section.catalog {
