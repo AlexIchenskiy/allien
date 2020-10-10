@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "627897ee5693e4c88626c5cab1bce401",
+    "revision": "1db54f981ac39af79d56b22744f1abfe",
     "url": "/allien/index.html"
   },
   {
-    "revision": "87f939af20638b11c8f6",
-    "url": "/allien/static/css/main.27c9daac.chunk.css"
+    "revision": "901972a0594e605061d7",
+    "url": "/allien/static/css/main.735a7923.chunk.css"
   },
   {
-    "revision": "45686ac4f1ae934b78d1",
-    "url": "/allien/static/js/2.4d1b8b69.chunk.js"
+    "revision": "6bd4dfe276def12b293b",
+    "url": "/allien/static/js/2.0a46d4c1.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/allien/static/js/2.4d1b8b69.chunk.js.LICENSE.txt"
+    "url": "/allien/static/js/2.0a46d4c1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "87f939af20638b11c8f6",
-    "url": "/allien/static/js/main.3e3fede3.chunk.js"
+    "revision": "901972a0594e605061d7",
+    "url": "/allien/static/js/main.88f05f39.chunk.js"
   },
   {
     "revision": "1820a90b050971bba2b5",
