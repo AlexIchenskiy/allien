@@ -562,6 +562,9 @@ section.sale {
   height: auto;
   padding: 4% 15%;
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 span.title-sale {
@@ -576,6 +579,7 @@ span.title-sale {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .sale-carousel-radio {
@@ -1671,6 +1675,7 @@ ul.list-footer li:hover:after {
 
   section.sale {
     padding: 35px 0;
+    width: 100%;
   }
 
   .title-sale {
