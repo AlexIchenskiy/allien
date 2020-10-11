@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import logo from './images/logo.svg';
 import delivery from './images/delivery.svg';
@@ -24,6 +24,13 @@ import CollectionCarousel from './collectioncarousel.js';
 import './App.css';
 
 function Header() {
+  const [modopened, setModopen] = useState(false);
+
+  function handleModalOpen() {
+    setModopen(modopened ? false : true);
+    console.log(modopened);
+  }
+
   return (
     <header id = "head">
         <div className = "top-head">
@@ -35,7 +42,7 @@ function Header() {
                   <li><img src = {ic2} className = "carousel-icon" /></li>
                   <li><img src = {ic3} className = "carousel-icon" /></li>
                   <li>
-                    <div className = "carousel-menu">
+                    <div className = "carousel-menu" onClick = {handleModalOpen}>
                       <span className = "menu-line" />
                       <span className = "menu-line" />
                       <span className = "menu-line" />
@@ -85,7 +92,7 @@ function Header() {
             </div>
           </div>
           <div className = "right-head">
-            <HeadCarousel />
+            <HeadCarousel handleModalOpen = {handleModalOpen} />
           </div>
         </div>
         <div className = "bottom-head">
@@ -103,7 +110,7 @@ function Header() {
 function Sale() {
   return (
     <section className = "sale" id = "sale">
-      <span class = "title-sale">Summer SALE</span>
+      <span className = "title-sale">Summer SALE</span>
       <SaleCarousel />
     </section>
   )
@@ -123,7 +130,7 @@ function Catalog() {
 
   for (let i = 0; i < items.length; i++) {
     elements.push(
-      <div className = "bottom-catalog-item">
+      <div className = "bottom-catalog-item" key = {i+'catelem'}>
         <img src = {items[i][0]}/>
         <div className = "bottom-catalog-item-desc">
           <span>{items[i][1]}</span>

@@ -561,6 +561,7 @@ section.sale {
   background: rgba(230, 239, 248, 0.29);
   height: auto;
   padding: 4% 15%;
+  width: 70%;
 }
 
 span.title-sale {
@@ -627,6 +628,7 @@ span.title-sale {
 .sale-carousel {
   height: auto;
   min-width: 875px;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1359,6 +1361,7 @@ ul.list-footer li:hover:after {
 @media only screen and (max-width: 992px) {
   header {
     padding: 0 85px;
+    background-image: none;
   }
 
   div.left-head-bottom {

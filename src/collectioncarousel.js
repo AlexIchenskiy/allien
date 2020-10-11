@@ -24,7 +24,7 @@ class collectionCarousel extends React.Component {
 	}
 
 	handleChange(event) {
-		if (event.target.value == this.state.current) {
+		if (event.target.value === this.state.current) {
 			event.preventDefault();
 		} else if (!this.state.complete) {
 			this.setState({complete: true});
@@ -114,27 +114,27 @@ class collectionCarousel extends React.Component {
 				<div className = "collection-carousel-radio" onChange = {this.handleChange}>
 					<label className = "sale-radio-check">
 						<input type="radio" value="0" name="catalog-check" 
-							checked = {this.state.current == 0 ? true : false}/>
+							checked = {this.state.current === 0 ? true : false}/>
 						<span className = "sale-carousel-check"></span>
 					</label>
 					<label className = "sale-radio-check">
 						<input type="radio" value="1" name="catalog-check" 
-							checked = {this.state.current == 1 ? true : false}/>
+							checked = {this.state.current === 1 ? true : false}/>
 						<span className = "sale-carousel-check"></span>
 					</label>
 					<label className = "sale-radio-check">
 						<input type="radio" value="2" name="catalog-check" 
-							checked = {this.state.current == 2 ? true : false}/>
+							checked = {this.state.current === 2 ? true : false}/>
 						<span className = "sale-carousel-check"></span>
 					</label>
 					<label className = "sale-radio-check">
 						<input type="radio" value="3" name="catalog-check" 
-							checked = {this.state.current == 3 ? true : false}/>
+							checked = {this.state.current === 3 ? true : false}/>
 						<span className = "sale-carousel-check"></span>
 					</label>
 					<label className = "sale-radio-check">
 						<input type="radio" value="4" name="catalog-check" 
-							checked = {this.state.current == 4 ? true : false}/>
+							checked = {this.state.current === 4 ? true : false}/>
 						<span className = "sale-carousel-check"></span>
 					</label>
 				</div>

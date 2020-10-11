@@ -62,7 +62,7 @@ class HeadCarousel extends React.Component {
 	                <li><img src = {ic2} className = "carousel-icon" /></li>
 	                <li><img src = {ic3} className = "carousel-icon" /></li>
 	                <li>
-	                	<div className = "carousel-menu">
+	                	<div className = "carousel-menu"  onClick = {this.props.handleModalOpen}>
 	                		<span className = "menu-line" />
 	                		<span className = "menu-line" />
 	                		<span className = "menu-line" />
